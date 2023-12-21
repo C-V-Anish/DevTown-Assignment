@@ -1,0 +1,105 @@
+{
+    "mobile_phones": [
+      {
+        "brand": "Apple",
+        "models": [
+          {
+            "name": "iPhone 13",
+            "type": "Smartphone",
+            "processor": "A15 Bionic",
+            "memory": "128GB",
+            "os": "iOS",
+            "price": "$999"
+          },
+          {
+            "name": "iPhone SE",
+            "type": "Smartphone",
+            "processor": "A14 Bionic",
+            "memory": "64GB",
+            "os": "iOS",
+            "price": "$399"
+          },
+          {
+            "name": "iPhone 12",
+            "type": "Smartphone",
+            "processor": "A14 Bionic",
+            "memory": "256GB",
+            "os": "iOS",
+            "price": "$1099"
+          }
+        ]
+      },
+      {
+        "brand": "Samsung",
+        "models": [
+          {
+            "name": "Galaxy S21",
+            "type": "Smartphone",
+            "processor": "Exynos 2100",
+            "memory": "128GB",
+            "os": "Android",
+            "price": "$799"
+          },
+          {
+            "name": "Galaxy A32",
+            "type": "Smartphone",
+            "processor": "MediaTek Helio G80",
+            "memory": "64GB",
+            "os": "Android",
+            "price": "$249"
+          },
+          {
+            "name": "Galaxy Note 20",
+            "type": "Smartphone",
+            "processor": "Exynos 990",
+            "memory": "256GB",
+            "os": "Android",
+            "price": "$999"
+          }
+        ]
+      },
+      {
+        "brand": "Google",
+        "models": [
+          {
+            "name": "Pixel 6",
+            "type": "Smartphone",
+            "processor": "Google Tensor",
+            "memory": "128GB",
+            "os": "Android",
+            "price": "$899"
+          },
+          {
+            "name": "Pixel 5a",
+            "type": "Smartphone",
+            "processor": "Qualcomm Snapdragon 765G",
+            "memory": "128GB",
+            "os": "Android",
+            "price": "$449"
+          }
+        ]
+      },
+      {
+        "brand": "OnePlus",
+        "models": [
+          {
+            "name": "OnePlus 9",
+            "type": "Smartphone",
+            "processor": "Qualcomm Snapdragon 888",
+            "memory": "256GB",
+            "os": "Android",
+            "price": "$999"
+          },
+          {
+            "name": "OnePlus Nord 2",
+            "type": "Smartphone",
+            "processor": "MediaTek Dimensity 1200",
+            "memory": "128GB",
+            "os": "Android",
+            "price": "$499"
+          }
+        ]
+      }
+    ]
+  }
+  
