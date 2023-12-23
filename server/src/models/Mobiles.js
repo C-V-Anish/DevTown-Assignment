@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 
 const mobileSchema = new mongoose.Schema({
   id: { type: Number, required: true },
@@ -12,6 +12,6 @@ const mobileSchema = new mongoose.Schema({
   price: { type: Number, required: true },
 });
 
-const Mobile = mongoose.model('Mobile', mobileSchema);
+const Mobile = mongoose.model("Mobile", mobileSchema);
 
 module.exports = Mobile;
