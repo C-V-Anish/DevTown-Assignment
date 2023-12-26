@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import tw from 'twin.macro';
 
 const NavbarContainer = styled.div`
-  ${tw`bg-gray-700 p-1 flex justify-between items-center`}
+  ${tw`bg-gray-700 p-4 flex justify-between items-center`}
 `;
 
 const Logo = styled.div`

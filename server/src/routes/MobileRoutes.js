@@ -6,19 +6,23 @@ const phones_array = require("../MOCK_DATA.json");
 
 router.get("/phones", (req, res) => {
   return Mobile.find()
-    .then((phones) => res.json(phones))
+    .then((phones) => {const phoneNames = phones.map(phone => phone["brand"] + " " + phone["model"]);
+    // console.log(phoneNames)
+    res.json({ phones: phoneNames });})
     .catch((err) => res.json(err));
 });
 
-router.get("/phones/:id", (req, res) => {
-  const id = req.params.id;
+router.get("/phones/:brand", (req, res) => {
+  const brand = req.params.brand;
 
-  Mobile.find({ id: id })
-    .then((phone) => {
-      if (!phone) {
+  Mobile.find({brand:brand})
+    .then((phones) => {
+      if (!phones || phones.length === 0) {
         return res.status(404).json({ error: "Phone not found" });
       }
-      console.log(res.json(phone[0]["brand"] + " " + phone[0]["model"]));
+      const phoneNames = phones.map(phone => phone["brand"] + " " + phone["model"]);
+      // console.log(phoneNames)
+      res.json({ phones: phoneNames });
     })
     .catch((err) => res.status(500).json({ error: err.message }));
 });

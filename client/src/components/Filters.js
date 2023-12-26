@@ -1,5 +1,3 @@
-// src/components/Filters.js
-
 import React, { useState } from 'react';
 import styled from 'styled-components';
 import tw from 'twin.macro';
@@ -37,7 +35,6 @@ const Filters = ({ onFilterChange }) => {
     const [selectedPriceRange, setSelectedPriceRange] = useState('');
   
     const handleFilterChange = () => {
-      // Pass the selected filters to the parent component
       onFilterChange({
         brand: selectedBrand,
         os: selectedOS,
@@ -61,7 +58,12 @@ const Filters = ({ onFilterChange }) => {
               <option value="Samsung">Samsung</option>
               <option value="Apple">Apple</option>
               <option value="Google">Google</option>
-              {/* Add more brands as needed */}
+              <option value="Oppo">Oppo</option>
+              <option value="Xiaomi">Xiaomi</option>
+              <option value="Sony">Sony</option>
+              <option value="Huawei">Huawei</option>
+              <option value="Realme">Realme</option>
+              <option value="Nothing">Nothing</option>
             </FilterOption>
           </FilterRow>
         </FilterSection>
@@ -76,8 +78,6 @@ const Filters = ({ onFilterChange }) => {
               <option value="">All OS</option>
               <option value="iOS">iOS</option>
               <option value="Android">Android</option>
-              <option value="Other">Other</option>
-              {/* Add more OS options as needed */}
             </FilterOption>
           </FilterRow>
         </FilterSection>
@@ -90,10 +90,12 @@ const Filters = ({ onFilterChange }) => {
               onChange={(e) => setSelectedProcessor(e.target.value)}
             >
               <option value="">All Processors</option>
-              <option value="Snapdragon 865">Snapdragon 865</option>
+              <option value="Snapdragon 888">Snapdragon 888</option>
               <option value="A14 Bionic">A14 Bionic</option>
-              <option value="Exynos 990">Exynos 990</option>
-              {/* Add more processor options as needed */}
+              <option value="Exynos 2100">Exynos 2100</option>
+              <option value="Kirin 9000">Kirin 9000</option>
+              <option value="MediaTek Dimensity 1200">MediaTek Dimensity 1200</option>
+              <option value="Apple A14 Bionic">Apple A14 Bionic</option>
             </FilterOption>
           </FilterRow>
         </FilterSection>
@@ -110,7 +112,6 @@ const Filters = ({ onFilterChange }) => {
               <option value="6GB">6GB</option>
               <option value="8GB">8GB</option>
               <option value="12GB">12GB</option>
-              {/* Add more RAM options as needed */}
             </FilterOption>
           </FilterRow>
         </FilterSection>
@@ -129,7 +130,6 @@ const Filters = ({ onFilterChange }) => {
               <option value="128GB">128GB</option>
               <option value="256GB">256GB</option>
               <option value="512GB">512GB</option>
-              {/* Add more internal memory options as needed */}
             </FilterOption>
           </FilterRow>
         </FilterSection>
@@ -142,10 +142,10 @@ const Filters = ({ onFilterChange }) => {
               onChange={(e) => setSelectedPriceRange(e.target.value)}
             >
               <option value="">All Prices</option>
-              <option value="0-500">$0 - $500</option>
-              <option value="501-1000">$501 - $1000</option>
-              <option value="1001-2000">$1001 - $2000</option>
-              {/* Add more price ranges as needed */}
+              <option value="10,000">Less than Rs.10,000</option>
+              <option value="20,000">Rs.10,000 - Rs.20,000</option>
+              <option value="30,000">Rs.20,000 - Rs.30,000</option>
+              <option value="35,000">Greater than Rs.30,000</option>
             </FilterOption>
           </FilterRow>
         </FilterSection>
